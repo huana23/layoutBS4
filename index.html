@@ -443,12 +443,18 @@
     <!-- video -->
     <section class="video">
         <div class="container video-content">
-            <a href="#intro-videos">
-                <i class="fa fa-play"></i>
-            </a>
-            <div id="intro-video">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640"
-                    height="360" frameborder="0" allowfullscreen></iframe>
+            <div class="video__Open">
+                <a href="#intro-video" id="trigger-overlay" type="button" onclick="openVideo()"><i class="fa fa-play"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="video__Close" id="myVideo">
+                <a href="javascript:void(0)" class="closebtn" >
+                    <h1 onclick="closeVideo()" type="button" class="overlay-close">X</h1>
+                </a>
+                <div id="intro-video">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640"
+                        height="360" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -707,14 +713,15 @@
     <!-- jquery waypoint -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
-    <!-- header-navbar -->
+    <!-- Videos -->
     <script>
-        function openNav() {
-            document.getElementById("myNav").style.display = "block";
+        function openVideo() {
+            document.getElementById("myVideo").style.display = "block";
         }
 
-        function closeNav() {
-            document.getElementById("myNav").style.display = "none";
+        function closeVideo() {
+            document.getElementById("myVideo").style.display = "none";
+            $('iframe').attr('src', $('iframe').attr('src'));
         }
     </script>
 
@@ -725,8 +732,8 @@
 
     </script>
     <!--Back to top-->
-    <script src="/js/main.js"></script>
-    <script src="/js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
 
     <!-- bootstrap vs4 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
