@@ -13,7 +13,7 @@ header{
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: initial;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 720px;
     object-fit: cover;
 }
 .header__top{
@@ -488,12 +488,23 @@ button#trigger-overlay {
 .video-content{
     width: 100%;
     height: 500px;
-    background-image: url(/ngocmy/layoutBS4/img/agents.jpg);
+    background-image: url(../img/agents.jpg);
     background-size: 100%;
     background-position: center;
     padding: 50px 0px;
     position: relative;
-    
+    z-index: 1;
+}
+.video-content::before{
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 6px;
 }
 .video-content a {
     text-align: center;
@@ -502,7 +513,7 @@ button#trigger-overlay {
     text-decoration: none;
 }
 .video-content a i{
-    padding: 20px;
+    padding: 30px;
     background-color: white;
     color: #ff6600;
     border-radius: 50%;
@@ -819,4 +830,9 @@ footer .active h2 a:hover{
     bottom: 20px;
     border-radius: 50%;
    z-index: 100;
+   visibility: hidden;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
 }
