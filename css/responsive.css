@@ -3,11 +3,18 @@
 }
 
 @media screen and (max-width:992px) {
-    
+    .number {
+        margin-top: -40px;
+    }
+    #testimonials .carousel-inner {
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width:768px) {
-    
+    #testimonials .carousel-inner {
+        height: 125vh;
+    }
 }
 
 @media screen and (max-width:576px) {
