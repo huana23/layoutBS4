@@ -489,12 +489,10 @@ button#trigger-overlay {
 .video-content{
     width: 100%;
     height: 500px;
-
-    background-image: url(/my/img/agents.jpg);
-
-    
+    background-image: url(../img/agents.jpg); 
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     padding: 50px 0px;
     position: relative;
     z-index: 1;
@@ -885,7 +883,7 @@ footer .active h2 a:hover{
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
-  color: black;
+  color: #fff;
 }
 .dark #content_text p{
     color: #c2d0da;
@@ -894,13 +892,16 @@ footer .active h2 a:hover{
 .dark #menu{
     background-color: #232121;
 }
+.dark .menu .menu__title h3{
+    color: #fff;
+}
 /*dark services*/
 .dark #services__item{
     background-color: #232121;
     border: 1px solid gray;
 }
 .dark #services__item-icon{
-    background-color: black;
+    background-color: #282828;
     transition: all .5s;
 }
 .dark #services__item-icon:hover{
@@ -911,7 +912,7 @@ footer .active h2 a:hover{
     color: #c2d0da;
 }
 .dark #services__item-info h4 a {
-    color: black;
+    color: #fff;
     transition: all .5s;
 }
 .dark #services__item-info h4 a:hover{
@@ -928,14 +929,14 @@ footer .active h2 a:hover{
     color: #c2d0da;
 }
 .dark #number__item .counter{
-    color: black;
+    color: #fff;
 }
 /*dark blog*/
 .dark #blog{
     background-color: #282828;
 }
 .dark #menu__title h3{
-    color: black;
+    color: #fff;
 }
 .dark #card_Blog{
     background-color: #282828;
@@ -944,16 +945,20 @@ footer .active h2 a:hover{
     background-color: #282828;
 }
 .dark #card-body a{
-    color: black;
+    color: #fff;
 }
 .dark #card-body p{
     color: #c2d0da;
 }
 .dark #card-footer-left a{
-     color: black;
+     color: #fff;
 }
 .dark #card-footer-rigth a{
-    color: black;
+    color: #fff;
+}
+/* dark testimonials */
+.dark .menu__title h3{
+    color: #fff;
 }
 /*dark footer*/
 
@@ -965,3 +970,4 @@ footer .active h2 a:hover{
     color: #c2d0da;
     border: none;
 }
+
