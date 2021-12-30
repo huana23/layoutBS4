@@ -1,3 +1,4 @@
+/* Light theme */
 *{
     margin: 0;
     padding: 0;
@@ -488,7 +489,7 @@ button#trigger-overlay {
 .video-content{
     width: 100%;
     height: 500px;
-    background-image: url(/ngocmy/layoutBS4/img/agents.jpg);
+    background-image: url(/my/img/agents.jpg);
     background-size: 100%;
     background-position: center;
     padding: 50px 0px;
@@ -818,5 +819,134 @@ footer .active h2 a:hover{
     right: 50px;
     bottom: 20px;
     border-radius: 50%;
-   z-index: 100;
+    z-index: 100;
+}
+
+
+/* Light theme */
+#myBody{
+    background-color:white;
+}
+#switchButton {
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+#switchButton .fa-sun {
+    display: none;
+}
+#switchButton .fa-moon {
+    display: block;
+}
+  
+  
+  /* Dark Theme*/
+.dark#myBody{
+  background-color: #232121;
+}
+.dark #switchButton {
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/*dark header*/
+.dark #search__input{
+    background-color: #232121;
+    border: 1px solid #232121;
+}
+.dark #search__icon{
+    color: #c2d0da;
+}
+/*dark content*/
+.dark #header-title h3{
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: black;
+}
+.dark #content_text p{
+    color: #c2d0da;
+}
+/*dark menu*/
+.dark #menu{
+    background-color: #232121;
+}
+/*dark services*/
+.dark #services__item{
+    background-color: #232121;
+    border: 1px solid gray;
+}
+.dark #services__item-icon{
+    background-color: black;
+    transition: all .5s;
+}
+.dark #services__item-icon:hover{
+    background-color: #ff6600;
+    color: white;
+}
+.dark #services__item-info p{
+    color: #c2d0da;
+}
+.dark #services__item-info h4 a {
+    color: black;
+    transition: all .5s;
+}
+.dark #services__item-info h4 a:hover{
+    color: #ff6600;
+}
+.dark #services__item-bottom p{
+    color: #c2d0da;
+}
+/*dark number*/
+.dark #number__item{
+    background-color: #232121;
+}
+.dark #number__item p{
+    color: #c2d0da;
+}
+.dark #number__item .counter{
+    color: black;
+}
+/*dark blog*/
+.dark #blog{
+    background-color: #282828;
+}
+.dark #menu__title h3{
+    color: black;
+}
+.dark #card_Blog{
+    background-color: #282828;
+}
+.dark #card-body{
+    background-color: #282828;
+}
+.dark #card-body a{
+    color: black;
+}
+.dark #card-body p{
+    color: #c2d0da;
+}
+.dark #card-footer-left a{
+     color: black;
+}
+.dark #card-footer-rigth a{
+    color: black;
+}
+/*dark footer*/
+
+.dark #footer-content ul li a{
+    background-color: #232121;
+}
+.dark #footer_Input{
+    background-color: #232121;
+    color: #c2d0da;
+    border: none;
 }

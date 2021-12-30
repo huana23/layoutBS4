@@ -29,8 +29,7 @@
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
-<body>
-    <!-- header -->
+<body id="myBody">
     <header>
         <div class="container">
             <div class="header__top">
@@ -45,28 +44,36 @@
                     <div class="search-bar">
                         <!--/search-right-->
                         <form class="search position-relative">
-                            <input type="search" class="search__input" name="search" placeholder="Search here.."
-                                onload="equalWidth()" required="">
-                            <span class="fa fa-search search__icon"></span>
+                            <input type="search" id="search__input" class="search__input" name="search"
+                                placeholder="Search here.." onload="equalWidth()" required="">
+                            <span id="search__icon" class="fa fa-search search__icon"></span>
                         </form>
                         <!--//search-right-->
                     </div>
 
+                    <div style="width: 2rem;" class="mx-auto py-3">
+                        <button class="btn" id="switchButton" title="Click to switch theme">
+                            <i class="far fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                        </button>
+                    </div>
+
+
                     <!-- <div class="w3_menu text-center">
-                        <div class="mobile-position">
-                          <nav class="navigation">
-                            <div class="theme-switch-wrapper">
-                              <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                  <i class="gg-sun"></i>
-                                  <i class="gg-moon"></i>
+                            <div class="mobile-position">
+                              <nav class="navigation">
+                                <div class="theme-switch-wrapper">
+                                  <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
+                                      <i class="gg-sun"></i>
+                                      <i class="gg-moon"></i>
+                                    </div>
+                                  </label>
                                 </div>
-                              </label>
-                            </div>
-                          </nav>
-                        </div>              
-                    </div> -->
+                              </nav>
+                            </div>              
+                        </div> -->
                     <div class="mobile-nav-button text-center">
                         <button id="trigger-overlay" type="button" onclick="openNav()"><i class="fa fa-bars"
                                 aria-hidden="true"></i></button>
@@ -114,14 +121,14 @@
             <div class="container py-md-5">
                 <div class="row content-1-grids">
                     <div class="col-sm-12 col-lg-5 content-1-left">
-                        <div class="header-title">
+                        <div id="header-title" class="header-title">
                             <h6 class="title-subhny">About Us</h6>
                             <h3 class="title-w3l mb-4">
                                 We found our creative space that is open for you.
                             </h3>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-3">
+                    <div id="content_text" class="col-sm-12 col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-3">
                         <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                             ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
                             elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
@@ -180,7 +187,7 @@
     </section>
 
     <!-- menu -->
-    <section class="menu">
+    <section id="menu" class="menu">
         <div class="container py-2">
             <div class="menu__title">
                 <h6>What's New</h6>
@@ -281,17 +288,52 @@
         <div class="services__content container py-lg-5 py-md-3 py-3">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 mt-4">
-                    <div class="services__item">
+                    <div id="services__item" class="services__item">
                         <div class="services__item-top">
-                            <div class="services__item-icon">
+                            <div id="services__item-icon" class="services__item-icon">
                                 <span class="fa fa-users"></span>
                             </div>
-                            <div class="services__item-info">
+                            <div id="services__item-info" class="services__item-info">
                                 <p>01</p>
                                 <h4><a href="#url">Soup</a></h4>
                             </div>
                         </div>
-                        <div class="services__item-bottom">
+                        <div id="services__item-bottom" class="services__item-bottom">
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div id="services__item" class="services__item">
+                        <div class="services__item-top">
+                            <div id="services__item-icon" class="services__item-icon">
+                                <span class="fa fa-shield-alt"></span>
+                            </div>
+                            <div id="services__item-info" class="services__item-info">
+                                <p>02</p>
+                                <h4><a href="#url">Drinks</a></h4>
+                            </div>
+                        </div>
+                        <div id="services__item-bottom" class="services__item-bottom">
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4">
+                    <div id="services__item" class="services__item">
+                        <div class="services__item-top">
+                            <div id="services__item-icon" class="services__item-icon">
+                                <span class="fa fa-thermometer-full"></span>
+                            </div>
+                            <div id="services__item-info" class="services__item-info">
+                                <p>03</p>
+                                <h4><a href="#url">Pizza</a></h4>
+                            </div>
+                        </div>
+                        <div id="services__item-bottom" class="services__item-bottom">
                             <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
                             </p>
                         </div>
@@ -299,82 +341,56 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 mt-4">
-                    <div class="services__item">
+                    <div id="services__item" class="services__item">
                         <div class="services__item-top">
-                            <div class="services__item-icon">
-                                <span class="fa fa-shield-alt"></span>
-                            </div>
-                            <div class="services__item-info">
-                                <p>02</p>
-                                <h4><a href="#url">Drinks</a></h4>
-                            </div>
-                        </div>
-                        <div class="services__item-bottom"></div>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-4">
-                    <div class="services__item">
-                        <div class="services__item-top">
-                            <div class="services__item-icon">
-                                <span class="fa fa-thermometer-full"></span>
-                            </div>
-                            <div class="services__item-info">
-                                <p>03</p>
-                                <h4><a href="#url">Pizza</a></h4>
-                            </div>
-                        </div>
-                        <div class="services__item-bottom"></div>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-4">
-                    <div class="services__item">
-                        <div class="services__item-top">
-                            <div class="services__item-icon">
+                            <div id="services__item-icon" class="services__item-icon">
                                 <span class="fa fa-american-sign-language-interpreting"></span>
                             </div>
-                            <div class="services__item-info">
+                            <div id="services__item-info" class="services__item-info">
                                 <p>04</p>
                                 <h4><a href="#url">Breakfast</a></h4>
                             </div>
                         </div>
-                        <div class="services__item-bottom"></div>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <div id="services__item-bottom" class="services__item-bottom">
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 mt-4">
-                    <div class="services__item">
+                    <div id="services__item" class="services__item">
                         <div class="services__item-top">
-                            <div class="services__item-icon">
+                            <div id="services__item-icon" class="services__item-icon">
                                 <span class="fa fa-paint-brush"></span>
                             </div>
-                            <div class="services__item-info">
+                            <div id="services__item-info" class="services__item-info">
                                 <p>05</p>
                                 <h4><a href="#url">Lunch</a></h4>
                             </div>
                         </div>
-                        <div class="services__item-bottom"></div>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <div id="services__item-bottom" class="services__item-bottom">
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4 mt-4">
-                    <div class="services__item">
+                    <div id="services__item" class="services__item">
                         <div class="services__item-top">
-                            <div class="services__item-icon">
+                            <div id="services__item-icon" class="services__item-icon">
                                 <span class="fa fa-eraser"></span>
                             </div>
-                            <div class="services__item-info">
+                            <div id="services__item-info" class="services__item-info">
                                 <p>06</p>
                                 <h4><a href="#url">Dinner</a></h4>
                             </div>
                         </div>
-                        <div class="services__item-bottom"></div>
-                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <div id="services__item-bottom" class="services__item-bottom">
+                            <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -404,7 +420,7 @@
             <div class="number__content">
                 <div class="row">
                     <div class="col-md-3 col-6 mt-md-0 mt-4">
-                        <div class="number__item">
+                        <div id="number__item" class="number__item">
                             <span class="fa fa-building"></span>
                             <p class="counter">15,100</p>
                             <p>Branches</p>
@@ -412,7 +428,7 @@
                     </div>
 
                     <div class="col-md-3 col-6 mt-md-0 mt-4">
-                        <div class="number__item">
+                        <div id="number__item" class="number__item">
                             <span class="fa fa-utensils"></span>
                             <p class="counter">19,256</p>
                             <p>Food Items</p>
@@ -420,7 +436,7 @@
                     </div>
 
                     <div class="col-md-3 col-6 mt-md-0 mt-4">
-                        <div class="number__item">
+                        <div id="number__item" class="number__item">
                             <span class="fa fa-users"></span>
                             <p class="counter">12,100</p>
                             <p>Chefs</p>
@@ -428,7 +444,7 @@
                     </div>
 
                     <div class="col-md-3 col-6 mt-md-0 mt-4">
-                        <div class="number__item">
+                        <div id="number__item" class="number__item">
                             <span class="fa fa-smile-beam"></span>
                             <p class="counter">2,560</p>
                             <p>Happy Customers</p>
@@ -448,7 +464,7 @@
                         aria-hidden="true"></i></a>
             </div>
             <div class="video__Close" id="myVideo">
-                <a href="javascript:void(0)" class="closebtn" >
+                <a href="javascript:void(0)" class="closebtn">
                     <h1 onclick="closeVideo()" type="button" class="overlay-close">X</h1>
                 </a>
                 <div id="intro-video">
@@ -460,15 +476,15 @@
     </section>
 
     <!-- blog -->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
-            <div class="menu__title">
+            <div id="menu__title" class="menu__title">
                 <h6>Latest Posts</h6>
                 <h3>Blog Posts</h3>
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div id="card_Blog" class="card">
                         <div class="card-header">
                             <img src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/banner1.jpg"
                                 class="card-img-top" alt="...">
@@ -477,26 +493,26 @@
                                 <span><i class="fa fa-clock"></i>10 Min Cook</span>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div id="card-body" class="card-body">
                             <a href="#">The Best Cookie Recipes To Bake This Weekend </a>
                             <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="card-footer-left">
+                            <div id="card-footer-left" class="card-footer-left">
                                 <a href="#">
                                     <img src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/team1.jpg"
                                         alt="">
                                 </a>
                                 <span><a href="">Rashed Kabir</a></span>
                             </div>
-                            <div class="card-footer-rigth">
+                            <div id="card-footer-rigth" class="card-footer-rigth">
                                 <span><a href="#">Read More <i class="fa fa-angle-right"></i></a></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div id="card_Blog" class="card">
                         <div class="card-header">
                             <img src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/banner3.jpg"
                                 class="card-img-top" alt="...">
@@ -505,26 +521,26 @@
                                 <span><i class="fa fa-clock"></i>10 Min Cook</span>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div id="card-body" class="card-body">
                             <a href="#">The Best Cookie Recipes To Bake This Weekend </a>
                             <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="card-footer-left">
+                            <div id="card-footer-left" class="card-footer-left">
                                 <a href="#">
                                     <img src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/team2.jpg"
                                         alt="">
                                 </a>
                                 <span><a href="">Jannatul Ferdous</a></span>
                             </div>
-                            <div class="card-footer-rigth">
+                            <div id="card-footer-rigth" class="card-footer-rigth">
                                 <span><a href="#">Read More <i class="fa fa-angle-right"></i></a></span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card">
+                    <div id="card_Blog" class="card">
                         <div class="card-header">
                             <img src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/banner1.jpg"
                                 class="card-img-top" alt="...">
@@ -533,19 +549,19 @@
                                 <span><i class="fa fa-clock"></i>15 Min Cook</span>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div id="card-body" class="card-body">
                             <a href="#">The Best Cookie Recipes To Bake This Weekend </a>
                             <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="card-footer-left">
+                            <div id="card-footer-left" class="card-footer-left">
                                 <a href="#">
                                     <img src="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/assets/images/team3.jpg"
                                         alt="">
                                 </a>
                                 <span><a href="">Rashed Kabir</a></span>
                             </div>
-                            <div class="card-footer-rigth">
+                            <div id="card-footer-rigth" class="card-footer-rigth">
                                 <span><a href="#">Read More <i class="fa fa-angle-right"></i></a></span>
                             </div>
                         </div>
@@ -638,7 +654,7 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="footer-content active col-4">
+                    <div id="footer-content" class="footer-content active col-4">
                         <h2>
                             <a href="#">
                                 Diner
@@ -677,7 +693,7 @@
                     <div class="footer-content col-4">
                         <h2>Subscribe to our Newsletter</h2>
                         <p>Enter your email and receive the latest news, updates and special offers from us.</p>
-                        <input type="text" placeholder="Your Email Addres"><br>
+                        <input id="footer_Input" type="text" placeholder="Your Email Addres"><br>
                         <button>Subscibe Now</button>
                     </div>
                 </div>
@@ -712,15 +728,15 @@
 
     <!-- jquery waypoint -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-     <!-- header-navbar -->
-     <script>
+    <!-- header-navbar -->
+    <script>
         function openNav() {
             document.getElementById("myNav").style.display = "block";
         }
 
         function closeNav() {
             document.getElementById("myNav").style.display = "none";
-            
+
         }
     </script>
 
@@ -750,6 +766,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
-</body>
 
+
+
+    <script src="js/sunmoon.js"></script>
+    <!-- bootstrap vs4 -->
+</body>
 </html>
